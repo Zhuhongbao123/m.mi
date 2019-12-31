@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0;maximum-scale=1.0; minimum-scale=1.0;user-scalable=no;">
+    <meta name="description " content=" ">
+    <meta name="keywords " content=" ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小米商城-小米官方网站，小米手机、红米手机正品专卖</title>
+    <link rel="shortcut icon" href="https://m.mi.com/static/img/icons/apple-touch-icon-152x152.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="css/mi.css">
+</head>
+
+<body>
+    <div class="app-shell">
+        <a href="#"><img src="./images/adv.png" alt=""></a>
+    </div>
+    <header class="app-heder-wrapper">
+        <div class="app-left">
+            <div class="app-logo">
+                <img src="./images/app-herder.png" alt=""></div>
+        </div>
+
+        <div class="app-middle">
+            <input type="text" placeholder="搜索商品名称" class="app-text">
+            <input type="button" class="app-btn">
+        </div>
+        <div class="app-right">
+            <div class="app-login-icon"></div>
+        </div>
+    </header>
+    <nav class="nav-wrap">
+        <div class="nav-item"><a href="#">家电</a></div>
+        <div class="nav-item"><a href="#">家电</a></div>
+        <div class="nav-item"><a href="#">家电</a></div>
+        <div class="nav-item"><a href="#">家电</a></div>
+        <div class="nav-item"><a href="#">家电</a></div>
+        <div class="nav-item"><a href="#">家电</a></div>
+        <div class="nav-display">
+            <i class="nav-display-icon"></i>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/container.jpg" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/cotainer2.jpg" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/container3.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="swiper-pagination">
+            </div>
+        </div>
+    </div>
+    <div class="multi-cell">
+        <a href="#"><img src="./images/1.png" alt=""></a>
+        <a href="#"><img src="./images/2.webp" alt=""></a>
+        <a href="#"><img src="./images/3.jpg" alt=""></a>
+        <a href="#"><img src="./images/1.png" alt=""></a>
+        <a href="#"><img src="./images/2.webp" alt=""></a>
+    </div>
+    <div class="multi-cell">
+        <a href="#"><img src="./images/5.png" alt=""></a>
+        <a href="#"><img src="./images/6.png" alt=""></a>
+        <a href="#"><img src="./images/7.png" alt=""></a>
+        <a href="#"><img src="./images/8.png" alt=""></a>
+        <a href="#"><img src="./images/4.png" alt=""></a>
+    </div>
+    <div class="cells-auto-feel">
+        <a href="#">
+            <img src="./images/3f01db528352554b7544720127c9577b.jpg" alt="">
+        </a>
+    </div>
+    <div class="cells-auto-feel multi-cell cells-auto-wrap">
+        <div class="multi-cell-pic">
+            <a href="#">
+                <img src="./images/ceel1.jpg" alt="">
+            </a>
+        </div>
+        <div class="multi-cell-pic">
+            <a href="#">
+                <img src="./images/cell2.jpg" alt="">
+            </a>
+            <a href="#">
+                <img src="./images/cell2.jpg" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="multi-cell">
+        <a href="#">
+            <img src="./images/cell3.jpg" alt="">
+        </a>
+    </div>
+    <div class="item-wrap">
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <script type="text/javascript">
+        function refreshRem() {
+            var desW = 750,
+                winW = document.documentElement.clientWidth,
+                ratio = winW / desW;
+            document.documentElement.style.fontSize = ratio * 100 + 'px';
+        }
+        refreshRem();
+        window.addEventListener('resize', refreshRem);
+    </script>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            //   direction: 'vertical', // 垂直切换选项
+            // loop: true, // 循环模式选项
+            // autoplay: {
+            //     delay: 3000,
+            //     disableOnInteraction: false,
+            // },
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+    </script>
+</body>
+
+</html>

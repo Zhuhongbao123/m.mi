@@ -1,0 +1,137 @@
+.app-shell img{
+    width: 100%;
+    /* display:block; */
+}
+.app-heder-wrapper {
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    /* 兼容 */
+    height: 0.84rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.app-logo {
+    width:0.6rem;
+    margin:0 .2rem;
+}
+.app-logo img{
+    width: 100%;
+    display:block;
+}
+.app-middle {
+    /* 控制子元素在一行 */
+    flex: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    position: relative; 
+    /* 控制子元素垂直对齐 */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.app-text {
+    width: 100%;
+    border:0.01rem solid #e5e5e5;
+    border-radius:0.04rem;
+    font-size:.3rem;
+    box-sizing:border-box;
+    width: 100%;
+    display:block;
+    padding-left:.6rem;
+    height: 0.6rem;
+}
+input {
+    outline:none;
+}
+.app-btn {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 0.6rem;
+    height: 0.6rem;
+    background:url(../images/下载.png) no-repeat center;
+    background-size:.4rem .4rem;
+    border:none;
+}
+.app-right {
+    width: 0.6rem;
+    /* height: 0.6rem; */
+}
+.app-login-icon {
+    width: 0.6rem;
+    height: 0.6rem;
+    background:url(../images/app-login.png) no-repeat center;
+    background-size:.4rem .4rem;
+}
+.nav-wrap {
+    display:flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.nav-item a{
+    text-decoration: none;
+    color:#666;
+}
+.nav-item {
+    font-size:.26rem;
+    flex:1;
+    text-align: center;
+    line-height: .55rem;
+}
+.nave-display {
+    width: 0.4rem;
+    
+}
+.nav-display-icon {
+    width: 0.4rem;
+    height: 0.4rem;
+    background:url(../images/icon.png) no-repeat;
+    display:block;
+    background-size:cover;
+}
+/* .container {
+    width: 100%;
+}
+.swiper-slide {
+    width: 100%;
+    height:auto;
+} */
+.swiper-slide img {
+    width: 100%;
+    height:auto;
+    display:block;
+}
+.swiper-container {
+    background: #ccc;
+}
+.swiper-pagination-bullet-active {
+    background: #fff;
+}
+.multi-cell {
+    display:flex;
+}
+.multi-cell a {
+    flex:1;
+    display:block;
+}
+.multi-cell img {
+    display:block;
+    width: 100%;
+}
+.cells-auto-feel img {
+    width: 100%;
+    display: block;
+}
+.multi-cell-pic a{
+    margin-bottom:0.03rem;
+    display:block;
+}
+.multi-cell-pic {
+    padding: left 0.03rem;;
+}
+.cells-auto-wrap {
+    margin-left:-0.03rem;
+}
