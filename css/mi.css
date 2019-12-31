@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html,body,#app {
+    width: 100%;
+}
 
 html {
     box-sizing: border-box;
@@ -10,7 +13,39 @@ html {
 body {
     background: #fff;
 }
-
+#app {
+    position: static;
+}
+.app-xiaomi {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.app-body {
+    position: relative;
+    /* max-width: 7.2rem; */
+    margin: 0 auto;
+}
+.bodys {
+    padding-bottom:52px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background: #fff;
+    top:2.39rem;
+    width: 100%;
+}
+.top {
+    position: fixed;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 9999;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2);
+    background: #f2f2f2;
+}
 .app-shell img {
     width: 100%;
     /* display:block; */
@@ -598,36 +633,5 @@ body {
     color: #ff6700
 }
 
-.top {
-    position: fixed;
-    top: -1px;
-    left: 0;
-    right: 0;
-    background: #fff;
-    z-index: 9999;
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2);
-    background: #f2f2f2;
-}
 
-#app {
-    position: static;
-}
-.app-xiaomi {
-    position: relative;
-    width: 100%;
-    z-index: 1;
-}
-.app-body {
-    position: relative;
-    max-width: 7.2rem;
-    margin: 0 auto;
-}
-.bodys {
-    padding-bottom:52px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-    background: #fff;
-    top:2.39rem;
-}
+
