@@ -1,0 +1,637 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body,#app {
+    width: 100%;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+}
+#app {
+    position: static;
+}
+.app-xiaomi {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.app-body {
+    position: relative;
+    /* max-width: 7.2rem; */
+    margin: 0 auto;
+}
+.bodys {
+    padding-bottom:52px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background: #fff;
+    top:2.39rem;
+    width: 100%;
+}
+.top {
+    position: fixed;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 9999;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2);
+    background: #f2f2f2;
+}
+.app-shell img {
+    width: 100%;
+    /* display:block; */
+}
+
+
+
+.app-heder-wrapper {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    /* 兼容 */
+    height: 0.84rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.app-logo {
+    width: 0.6rem;
+    margin: 0 .2rem;
+}
+
+.app-logo img {
+    width: 100%;
+    display: block;
+}
+
+.app-middle {
+    /* 控制子元素在一行 */
+    flex: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    position: relative;
+    /* 控制子元素垂直对齐 */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.app-text {
+    width: 100%;
+    border: 0.01rem solid #e5e5e5;
+    border-radius: 0.04rem;
+    font-size: .3rem;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    padding-left: .6rem;
+    height: 0.6rem;
+}
+
+input {
+    outline: none;
+}
+
+.app-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.6rem;
+    height: 0.6rem;
+    background: url(../images/下载.png) no-repeat center;
+    background-size: .4rem .4rem;
+    border: none;
+}
+
+.app-right {
+    width: 0.6rem;
+    /* height: 0.6rem; */
+}
+
+.app-login-icon {
+    width: 0.6rem;
+    height: 0.6rem;
+    background: url(../images/app-login.png) no-repeat center;
+    background-size: .4rem .4rem;
+}
+
+.nav-wrap {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #666;
+}
+
+.nav-item {
+    font-size: .26rem;
+    flex: 1;
+    text-align: center;
+    line-height: .55rem;
+}
+
+.nave-display {
+    width: 0.4rem;
+
+}
+
+.nav-display-icon {
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url(../images/icon.png) no-repeat;
+    display: block;
+    background-size: cover;
+}
+
+/* .container {
+    width: 100%;
+}
+.swiper-slide {
+    width: 100%;
+    height:auto;
+} */
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.swiper-container {
+    background: #ccc;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+.multi-cell {
+    display: flex;
+}
+
+.multi-cell a {
+    flex: 1;
+    display: block;
+}
+
+.multi-cell img {
+    display: block;
+    width: 100%;
+}
+
+.cells-auto-feel img {
+    width: 100%;
+    display: block;
+}
+
+.multi-cell-pic-top {
+    margin-bottom: 0.03rem;
+    display: block;
+}
+
+.multi-cell-pic img {
+    width: 100%;
+}
+
+.multi-cell-pic {
+    margin-right: 0.03rem;
+}
+
+.cells-auto-wrap {
+    margin-right: -0.03rem;
+}
+
+.item-wrap {
+    padding: 0 0.12rem;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+
+.item-wrap .item-1 {
+    margin-right: .12rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.info {
+    padding: .2rem .27rem;
+    -webkit-box-align: center;
+    align-items: center;
+    background: #fff;
+    text-align: center;
+}
+
+.info-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: .28rem;
+    color: rgba(0, 0, 0, .87);
+}
+
+.info-desc {
+    margin-top: .06rem;
+    font-size: .22rem;
+    line-height: .3rem;
+    color: rgba(0, 0, 0, .54);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price {
+    color: #ea625b;
+    height: 1.5em;
+    line-height: 1.5em;
+    position: relative;
+    display: block;
+    font-size: .28rem;
+}
+
+.old {
+    font-size: 0;
+    display: inline-block;
+}
+
+.price .span1 {
+    font-size: .76em;
+    color: #ea625b;
+}
+
+.span3 {
+    font-size: .28rem;
+}
+
+del {
+    font-size: .22rem;
+    color: rgba(0, 0, 0, .54);
+}
+
+.buybtn {
+    width: 2rem;
+    background: #ea625b;
+    border-radius: .05rem;
+    text-align: center;
+    color: #fff;
+    font-size: .24rem;
+    padding: .16rem 0;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.border-line {
+    height: 0.02rem;
+    border-bottom: 0.02rem solid rgb(206, 206, 206);
+    background-color: rgb(206, 206, 206);
+    width: 100%;
+}
+
+.desc {
+    line-height: 1rem;
+    font-size: .28rem;
+    text-align: center;
+    height: 1rem;
+    color: rgba(0, 0, 0, .6);
+    width: 100%;
+}
+
+body {
+    font-family: Helvetica Neue, Tahoma, Arial, PingFangSC-Regular, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+}
+
+*,
+:after,
+:before {
+    box-sizing: inherit;
+}
+
+.kong {
+    height: 0.16rem;
+    border-bottom: 0.16rem solid rgb(245, 245, 245);
+    background-color: rgb(245, 245, 245);
+}
+
+.line {
+    height: 0.0666667rem;
+    border-bottom: 0.0666667rem solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+}
+
+.inner {
+    overflow: hidden;
+    width: 100%;
+    padding: 0 .12rem;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.inner-item-1 {
+    margin-right: .12rem;
+    -webkit-box-flex: 1;
+}
+
+.inner a {
+    display: block;
+}
+
+.inner-item img {
+    width: 100%;
+    display: block;
+    width: 3.44rem;
+    height: 2.8rem;
+}
+
+.inner-item {
+    -webkit-box-flex: 1;
+    display: block;
+    flex: 1;
+    position: relative;
+    width: 3.4rem;
+}
+
+.inner-img {
+    position: relative;
+    width: 3.44rem;
+    height: 2.8rem;
+}
+
+.inner-img2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.inner-img2 img {
+    width: 1rem;
+    height: auto;
+}
+
+.inner-info {
+    padding: .2rem .27rem;
+    text-align: centent;
+    background: #fff;
+}
+
+.inner .name {
+    color: rgba(0, 0, 0, .87);
+    font-size: .28rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.inner .brief {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: .22rem;
+    margin-top: .06rem;
+    line-height: .3rem;
+    color: rgba(0, 0, 0, .54)
+}
+
+.inner .price {
+    font-size: .28rem;
+    color: #ea625b;
+    height: 1.5em;
+    line-height: 1.5em;
+    position: relative;
+    padding-left: .5em;
+    /* display: inline-block; */
+    /* width: 0.6784rem; */
+}
+
+.inner .price:before {
+    content: "¥";
+    position: absolute;
+    left: 45px;
+    top: 0.01rem;
+    font-size: .76em;
+    text-decoration: none;
+    vertical-align: inherit;
+}
+
+.old {
+    position: relative;
+    padding-left: .5em;
+}
+
+.inner .old:before {
+    content: "¥";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: .76em;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.price .old {
+    display: inline-block;
+    margin: 0 .1rem;
+    font-size: .22rem;
+    color: rgba(0, 0, 0, .54);
+}
+
+.btn {
+    width: 2rem;
+    border-radius: .05rem;
+    text-align: center;
+    color: #fff;
+    font-size: .24rem;
+    padding: .16rem 0;
+    background: #ea625b;
+    margin: 0 auto;
+}
+
+.box-info {
+    padding: .2rem .27rem;
+    text-align: left;
+}
+
+.name {
+    font-size: .28rem;
+    color: rgba(0, 0, 0, .87);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.brief {
+    margin-top: .06rem;
+    font-size: .22rem;
+    line-height: .3rem;
+    color: rgba(0, 0, 0, .54);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price {
+    font-size: .28rem;
+    color: #ea625b;
+    height: 1.5em;
+    line-height: 1.5em;
+    position: relative;
+    padding-left: .5em;
+    /* display: inline-block; */
+    /* width: 0.6784rem; */
+}
+
+.box-info .price:before {
+    content: "¥";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: .76em;
+    text-decoration: none;
+    vertical-align: bottom;
+}
+
+.list-one {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+
+.list-one .img img {
+    display: block;
+    width: 3.6rem;
+    height: 3.6rem;
+}
+
+.img {
+    flex: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+}
+
+.briefwarp {
+    margin-top: .06rem;
+    font-size: .22rem;
+    line-height: .35rem;
+    color: rgba(0, 0, 0, .54);
+}
+
+.list-one .info {
+    padding: .64rem .12rem 0 .32rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 3.6rem;
+    height: 3.6rem;
+    text-align: left;
+    flex: 1;
+}
+
+.mt32 {
+    margin-top: .2rem;
+    font-size: .28rem;
+    color: #ea625b;
+    height: 1.5em;
+    line-height: 1.5em;
+    position: relative;
+    /* display: inline-block; */
+}
+
+.www {
+    padding-left: .5em
+}
+
+.www:before {
+    content: "¥";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: .76em;
+    text-decoration: none;
+}
+
+.new {
+    display: inline-block;
+    margin: 0 .1rem;
+    font-size: .22rem;
+    color: rgba(0, 0, 0, .54);
+    position: relative;
+    padding-left: .5em;
+}
+
+.new:before {
+    content: "¥";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: .76em;
+}
+
+.footer img {
+    width: 100%;
+    display: block;
+}
+
+.dibu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+.bottom {
+    display: flex;
+    height: 52px;
+    width: 100%;
+    background: #fff;
+    align-items: center;
+}
+
+.bottom-item {
+    display: block;
+    text-align: center;
+    flex: 1;
+}
+
+.bottom i {
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url(../images/z.png) no-repeat center;
+    background-size: cover;
+    margin: 0 auto .1rem;
+}
+
+.bottom-desc {
+    font-size: .22rem;
+    color: #999;
+    display: block;
+}
+
+.bottom-desc-1 {
+    color: #ff6700
+}
+
+
+
