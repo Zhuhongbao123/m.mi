@@ -166,8 +166,6 @@ header {
     top:1.62rem;
     width: 100%;
     padding-bottom:1rem;
-    overflow:auto;
-    height: 10rem;
 }
 .has-action {
     padding:0 .3rem;
